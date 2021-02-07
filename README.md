@@ -24,9 +24,9 @@ $ /path/to/start-container.sh [your-name-of-choice] /path/to/ConfigsFolder /path
 ```
 
 ###### Possibility 2
-To just run the Server run without persistent storage you can use the following, but you will need to expose the ports 3000-3001 of the game server to reach it.
+To just run the Server without persistent storage you can use the following, but you will need to expose the ports 3000-3001 of the game server to reach it.
 ```
 $ docker run -p 3000:3000 -p 3001:3001 -d [your-name-of-choice]
 ```
 
-##Have Fun
+## Have Fun

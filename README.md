@@ -14,8 +14,10 @@ $ docker build -t [your-name-of-choice] .
 ## Run
 ###### Possibility 1
 If you want to specify a folder for persistent storage of the Game-World and load your own configuration files you can use the start-script. Docker will mount the folders given in the script into the Container. By default the ports 3000 and 3001 will be used for the Eco-Server.
-**Notice: you will need to have the configuration files already in the folder you are mounting**
-Furthermore the docker container will always restart on crashes and reboot of the host machine
+
+**Notice: you will need to have the configuration files already in the folder you are mounting.**
+
+Furthermore the docker container will always restart on crashes and reboot of the host machine unless explicitly killed
 
 ```
 $ /path/to/start-container.sh [your-name-of-choice] /path/to/ConfigsFolder /path/to/StorageFolder

@@ -1,5 +1,5 @@
-FROM archlinux
-RUN pacman -Syu unzip wget libgdiplus --noconfirm
+FROM debian:latest
+RUN apt-get update && apt-get -y install unzip wget libgdiplus
 COPY . /eco
 WORKDIR /eco
 RUN wget $(cat ./server-url.txt)

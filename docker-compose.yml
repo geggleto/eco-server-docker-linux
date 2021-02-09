@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+    eco-server:
+        build: .
+        ports:
+            - "3000:3000/tcp"
+            - "3000:3000/udp"
+            - "3001:3001/tcp"
+        volumes:
+#            add your volumes here
+#            - /pathOrVolume/to/Storage/:/eco/Storage/
+#            - /pathOrVolume/to/Configs/:/eco/Configs/
+#            - /pathOrVolume/to/Logs/:/eco/Logs
+        restart: 
+            always
+        

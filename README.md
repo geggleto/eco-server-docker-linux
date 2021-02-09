@@ -9,13 +9,14 @@ This is a script to automate the starting/running of an eco-gameserver on Linux
 - If you want to customize your configuration for the server create a volume / folder with the config files and point the container to the specific location in the `docker-compose.yml`
   
 ## Run
-- If you want to store the Eco-Server files persistently, simply edit the volumes in the `docker-compose.yml`
+- If you want to change the location of the Eco-Server files, simply edit the volumes in the `docker-compose.yml`
 - Start the container with the following
 
 ```
 $ docker-compose up -d
 ```
 
+## Run alternative
 - Alternatively you can build the Docker-image and run it by passing the needed arguments (port 3000 tcp & udp and 3001 for the web interface) e.g.:
 ```
 $ docker build -t [image-name] .

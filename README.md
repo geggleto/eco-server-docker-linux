@@ -2,9 +2,11 @@
 This is a script to automate the starting/running of an eco-gameserver on Linux
 
 ## Prerequisites
-- You first need to place the link to the Linux-Server.zip in the `server-zip-url.txt` file.
+- You will need to have `docker` and `docker-compose` installed on your machine 
+- First need to place the link to the Linux-Server.zip in the `server-zip-url.txt` file.
   - You can retrieve the link from the [Eco Account Page](https://play.eco/account)
   - It should look something like `https://.../eco-releases/EcoServerLinux....zip`
+- If you want to customize your configuration for the server create a volume / folder with the config files and point the container to the specific location inf the `docker-compose.yml`
   
 ## Run
 - If you want to store the Eco-Server files persistently, simply edit the volumes in the `docker-compose.yml`

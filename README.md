@@ -1,4 +1,4 @@
-# eco-docker
+# eco-server-docker-linux
 This is a script to automate the starting/running of an eco-gameserver on Linux
 
 ## Prerequisites

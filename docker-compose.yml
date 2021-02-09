@@ -8,10 +8,15 @@ services:
             - "3000:3000/udp"
             - "3001:3001/tcp"
         volumes:
-#            add your volumes here
+#            modify your volumes/paths here
 #            - /pathOrVolume/to/Storage/:/eco/Storage/
-#            - /pathOrVolume/to/Configs/:/eco/Configs/
-#            - /pathOrVolume/to/Logs/:/eco/Logs
+            - eco-world:/eco/Storage
+            - eco-logs:/eco/Logs
         restart: 
             always
+
+# default volumes for the container:
+volumes:
+    eco-world:
+    eco-logs:
         

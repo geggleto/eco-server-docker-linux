@@ -7,6 +7,7 @@ This is a script to automate the starting/running of an eco-gameserver on Linux
   - You can retrieve the link from the [Eco Account Page](https://play.eco/account)
   - It should look something like `https://.../eco-releases/EcoServerLinux....zip`
 - If you want to customize your configuration for the server create a volume / folder with the config files and point the container to the specific location in the `docker-compose.yml`
+- You will need to forward your ports on your router aswell as open port 3000 tcp/udp and 3001/tcp in your firewall
   
 ## Run
 - If you want to change the location of the Eco-Server files, simply edit the volumes in the `docker-compose.yml`

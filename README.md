@@ -16,6 +16,7 @@ $ docker-compose up -d
 
 - Alternatively you can build the Docker-image and run it by passing the needed arguments (port 3000 tcp & udp and 3001 for the web interface) e.g.:
 ```
+$ docker build -t [image-name] .
 $ docker run -p 3000:3000/udp -p 3000:3000/tcp -p 3001:3001 -d [image-name]
 ```
 

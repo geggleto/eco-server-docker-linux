@@ -1,22 +1,14 @@
 version: '3.3'
 
 services:
-    eco-server:
-        build: .
-        ports:
-            - "3000:3000/tcp"
-            - "3000:3000/udp"
-            - "3001:3001/tcp"
-        volumes:
-#            modify your volumes/paths here
-#            - /pathOrVolume/to/Storage/:/eco/Storage/
-            - eco-world:/eco/Storage
-            - eco-logs:/eco/Logs
-        restart: 
-            always
-
-# default volumes for the container:
-volumes:
-    eco-world:
-    eco-logs:
-        
+  eco-server:
+    build: .
+    ports:
+      - "3000:3000/tcp"
+      - "3000:3000/udp"
+      - "3001:3001/tcp"
+    volumes:
+      - /root/eco-server-docker-linux/Storage:/eco/Storage
+      - /root/eco-server-docker-linux/Logs:/eco/Logs
+      - /root/eco-server-docker-linux/Configs:/eco/Configs
+    restart: always
